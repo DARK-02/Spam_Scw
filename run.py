@@ -43,6 +43,7 @@ def mr_x():
 def mr_dark_input():
     subs_mr_dark = input("   \033[1;37m\033[31m➤ \033[36m")
     if subs_mr_dark == "1":
+         dark_point = 1
          print ("\033[1;30m<═════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
          telkom_0 = input("   \033[1;37m[\033[1;35m#\033[1;37m] No Target: \033[36m0")
          jumlah = int(input("   \033[1;37m[\033[1;35m#\033[1;37m] Jumlah: \033[36m"))
@@ -63,9 +64,11 @@ def mr_dark_input():
              if 'Maaf, Anda belum melakukan konfirmasi OTP di transaksi sebelumnya, silakan coba kembali setelah 1 menit' in darko:
                   print ('   \033[1;37m[\033[31m#\033[1;37m] \033[1;37mTidak dapat terkirim di karenakan inquiryId sedang di gunakan!, Mohon Coba Lagi! \033[31m ')
              else:
-                  print ('   \033[1;37m[\033[1;32m#\033[1;37m] \033[1;32mTerkirim \033[31m ')
+                  print (f'   \033[1;37m[\033[1;32m{dark_point}\033[1;37m] \033[1;32mTerkirim \033[31m ')
+                  dark_point += 1
              dark_time(00, 60)
     elif subs_mr_dark == "3":
+         dark_point = 1
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
          xl_0 = input("   \033[1;37m[\033[1;35m#\033[1;37m] No Target: \033[36m0")
          xl = ("0"+xl_0)
@@ -105,6 +108,7 @@ def mr_dark_input():
                   print(f'   \033[1;37m[\033[31m{dark_point}\033[1;37m] \033[1;37msilah kan coba lagi setelah 15 menit! \033[31m ')
                   break
     elif subs_mr_dark == "2":
+         dark_point = 1
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
          drknom = input("   \033[1;37m[\033[1;35m#\033[1;37m] No Target: \033[36m0")
          no = ("0"+drknom)
@@ -132,7 +136,7 @@ def mr_dark_input():
                   time.sleep(30)
                   dark_point += 1
              else:
-                  print (f'   \033[1;37m[\033[31m??\033[1;37m] \033[1;37mTidak dapat terkirim di karenakan sudah limit! \033[31m ')
+                  print (f'   \033[1;37m[\033[31m{dark_point}\033[1;37m] \033[1;37mTidak dapat terkirim di karenakan sudah limit! \033[31m ')
                   time.sleep(30)
                   dark_point += 1
     elif subs_mr_dark == "4":
@@ -155,7 +159,7 @@ def banner_anjay_subs_mr_dark():
     print ("    \033[1;37m\033[31m>\033[1;37m Github\033[31m:\033[1;37m\033[1;37m github.com/DARK-02 ")
     print ("")
     print ("   \033[1;37m\033[31m>\033[1;37m Status Otp\033[31m:\033[1;37m\033[1;32m Running")
-    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m0")
+    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m1")
     print ("")
     print ("    \033[1;37m\033[31m\033[1;33m1\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Sms \033[31m(\033[36mDuniaGames\033[31m) ")
     print ("    \033[1;37m\033[31m\033[1;33m2\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Call \033[31m(\033[36mJagreward\033[31m) ")
