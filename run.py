@@ -106,7 +106,6 @@ def mr_dark_input():
                   time.sleep(5)
              else:
                   print(f'   \033[1;37m[\033[31m{dark_point}\033[1;37m] \033[1;37msilah kan coba lagi setelah 15 menit! \033[31m ')
-                  break
     elif subs_mr_dark == "2":
          dark_point = 1
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
