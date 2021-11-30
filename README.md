@@ -1,7 +1,7 @@
-## Spam Multi OTP
-> apa itu multi otp?
+## Spam Scw
+> apa itu Script Scw?
 
-> spam multi otp adalah tools: Spamming Multi operator yang open source di mana setiap komunitas dapat mengedit nya sedemikian rupa
+> spam scw merupakan script spam sms, call, whatsapp open source yang di kembangkan oleh grup Dark Club
 
 ## Instalasi
 ```
@@ -10,10 +10,10 @@ $ pkg update -y && pkg upgrade -y
 $ pkg install git -y
 $ pkg install python -y
 $ pip install requests
-$ git clone https://github.com/DARK-02/Multi-Otp
+$ git clone https://github.com/DARK-02/Spam_Scw
 ```
 ## Eksekusi
 ```python3
-$ cd Multi-Otp
-$ python3 run.py
+$ cd Spam_Scw
+$ python run.py
 ```
