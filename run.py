@@ -2,7 +2,7 @@
 # Recode Sebelum Subscribe? ANAK HARAM!!
 # Btw ini hanya update dari script sebelum nya..
 # -------{ Di sini Gw Import Module dulu }-------- #
-import os,sys,time,requests,json,random
+import os,sys,time,requests,json,random,re
 from requests import post
 from requests import get
 # -------{ Di sini gw memanggil git pull untuk otamatis ke update jika ada pembaruan }-------- #
