@@ -36,7 +36,7 @@ def mr_x():
     time.sleep(3)
     print ("\033[1;37m[\033[1;30m2\033[1;37m] \033[36m Join \033[1;37mDark Club \033[36m cuk :v")
     time.sleep(1)
-    os.system("xdg-open https://chat.whatsapp.com/C13bgsiasmWLwLFwFBFu0A")
+    os.system("xdg-open https://chat.whatsapp.com/GfDPRMb91AD8UXpD2jbJVD")
     time.sleep(3)
     os.system("clear")
 # -------{ bang give alok bang :V }-------- #
@@ -159,7 +159,7 @@ def banner_anjay_subs_mr_dark():
     print ("    \033[1;37m\033[31m>\033[1;37m Github\033[31m:\033[1;37m\033[1;37m github.com/DARK-02 ")
     print ("")
     print ("   \033[1;37m\033[31m>\033[1;37m Status Otp\033[31m:\033[1;37m\033[1;32m Running")
-    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m6")
+    print ("   \033[1;37m\033[31m>\033[1;37m Version\033[31m:\033[1;37m\033[1;37m 1\033[31m.\033[1;37m8")
     print ("")
     print ("    \033[1;37m\033[31m\033[1;33m1\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Sms \033[31m(\033[36mDuniaGames\033[31m) ")
     print ("    \033[1;37m\033[31m\033[1;33m2\033[31m.\033[1;37m \033[31m\033[1;37m\033[1;37mSpam Call \033[31m(\033[36mJagreward\033[31m) ")
